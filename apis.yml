@@ -1,7 +1,25 @@
 aid: ebureau
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ebureau.png
 name: eBureau
-description: eBureau is a company surfaced as a portfolio company of redpoint-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  eBureau was a predictive analytics and big-data scoring company founded in 2004 and headquartered in
+  St. Cloud, Minnesota, providing real-time predictive scores, identity verification, and fraud-prevention
+  products (eScore, eIDverifier, eIDcompare) to lenders, insurers, and marketers. eBureau was acquired by
+  TransUnion in December 2015 and its capabilities were absorbed into TransUnion's fraud and identity
+  solutions; the ebureau.com domain remains live (behind Cloudflare) but exposes no independent public
+  developer portal, API reference, or machine-readable API specification. This API Evangelist profile was
+  surfaced as a portfolio company of Redpoint Ventures and enriched with a live domain-security probe.
 url: https://raw.githubusercontent.com/api-evangelist/ebureau/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Predictive Analytics
+- Identity Verification
+- Fraud Prevention
+- Credit Risk
+- Data
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ebureau-domain-security.yml
 - type: Website
   url: http://www.ebureau.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
